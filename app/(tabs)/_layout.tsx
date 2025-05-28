@@ -1,6 +1,7 @@
 import React from "react";
 import { Tabs } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
+import { AddButton } from "@/components/add-button";
 
 const TabsLayout = () => {
   return (
@@ -19,6 +20,7 @@ const TabsLayout = () => {
         tabBarStyle: {
           backgroundColor: "#03a9f4",
         },
+        headerRight: () => <AddButton />,
       }}
     >
       <Tabs.Screen
